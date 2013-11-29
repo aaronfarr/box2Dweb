@@ -17,7 +17,7 @@
  * misrepresented as being the original software.
  * 3. This notice may not be removed or altered from any source distribution.
  */
-var Box2D = {};
+var Box2D = {};ox2D.postDefs.push(function () {
 
 (function (a2j, undefined) {
 
@@ -28,7 +28,7 @@ var Box2D = {};
         Object.defineProperty = function(obj, p, cfg) {
             if(cfg.get instanceof Function)
                 obj.__defineGetter__(p, cfg.get);
-            if(cfg.set instanceof Function)
+            if(cfg.set instanceof Function)ox2D.postDefs.push(function () {
                 obj.__defineSetter__(p, cfg.set);
         }
     }
@@ -8823,7 +8823,7 @@ Box2D.postDefs = [];
         Box2D.Dynamics.Joints.b2Joint.e_revoluteJoint = 1;
         Box2D.Dynamics.Joints.b2Joint.e_prismaticJoint = 2;
         Box2D.Dynamics.Joints.b2Joint.e_distanceJoint = 3;
-        Box2D.Dynamics.Joints.b2Joint.e_ropeJoint = 3;
+        Box2D.Dynamics.Joints.b2Joint.e_ropeJoint = 10;
         Box2D.Dynamics.Joints.b2Joint.e_pulleyJoint = 4;
         Box2D.Dynamics.Joints.b2Joint.e_mouseJoint = 5;
         Box2D.Dynamics.Joints.b2Joint.e_gearJoint = 6;
