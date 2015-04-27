@@ -17,7 +17,7 @@
  * misrepresented as being the original software.
  * 3. This notice may not be removed or altered from any source distribution.
  */
-var Box2D = {};ox2D.postDefs.push(function () {
+var Box2D = {};Box2D.postDefs.push(function () {
 
 (function (a2j, undefined) {
 
