@@ -28,7 +28,7 @@ var Box2D = {};Box2D.postDefs.push(function () {
         Object.defineProperty = function(obj, p, cfg) {
             if(cfg.get instanceof Function)
                 obj.__defineGetter__(p, cfg.get);
-            if(cfg.set instanceof Function)ox2D.postDefs.push(function () {
+            if(cfg.set instanceof Function)Box2D.postDefs.push(function () {
                 obj.__defineSetter__(p, cfg.set);
         }
     }
